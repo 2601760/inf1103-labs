@@ -12,8 +12,7 @@ while True:
     # Check if input is a valid integer
     if not stock.isdigit():
         print("Error: Please enter a valid integer.")
-        continue
-
+        continue    
 
     # Convert input to integer
     stock = int(stock)
