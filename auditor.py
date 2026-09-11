@@ -17,5 +17,6 @@ while True:
     # Convert input to integer
     stock = int(stock)
 
+    # Manage State
     # Add stock to inventory
     inventory += stock
