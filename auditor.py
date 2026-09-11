@@ -13,3 +13,10 @@ while True:
     if not stock.isdigit():
         print("Error: Please enter a valid integer.")
         continue
+
+
+    # Convert input to integer
+    stock = int(stock)
+
+    # Add stock to inventory
+    inventory += stock
