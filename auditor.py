@@ -20,3 +20,8 @@ while True:
     # Manage State
     # Add stock to inventory
     inventory += stock
+
+    # Check for overstock
+    if inventory > 500:
+        print("ALERT: Inventory exceeds 500 units!")
+        break
