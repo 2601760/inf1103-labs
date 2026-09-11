@@ -1,1 +1,1 @@
-print("Hello, this is the auditor module.")
+print("Inventory = 0")
