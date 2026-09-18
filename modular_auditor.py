@@ -17,6 +17,10 @@ def get_valid_input():
     return quantity
 
 
+def process_delivery(current_total, new_value):
+    return current_total + new_value
+
+
 def main():
     inventory = 0
 
@@ -29,7 +33,9 @@ def main():
         if result is None:
             continue
 
-        print("Valid quantity:", result)
+        inventory = process_delivery(inventory, result)
+
+        print("Current Inventory:", inventory)
 
 
 if __name__ == "__main__":
