@@ -21,6 +21,10 @@ def process_delivery(current_total, new_value):
     return current_total + new_value
 
 
+def calculate_tax(amount):
+    return amount * 0.10
+
+
 def main():
     inventory = 0
 
@@ -33,8 +37,10 @@ def main():
         if result is None:
             continue
 
+        tax = calculate_tax(result)
         inventory = process_delivery(inventory, result)
 
+        print(f"Delivery: {result} units | Tax: ${tax:.2f}")
         print("Current Inventory:", inventory)
 
 
